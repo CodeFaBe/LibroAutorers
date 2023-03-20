@@ -7,6 +7,9 @@ public class Autor  extends Libro{
 	int edad;
 	String sexo; 
 	int codigoLibro;
+
+	String apellido;
+
 Libro  a = new Libro("hola", "mola");
 
 	public Autor(){	}
@@ -30,7 +33,11 @@ Libro  a = new Libro("hola", "mola");
 		this.edad = edad;	}
 
 	public String toString() {
-		return "Autor [nombre=" + nombre + ", edad=" + edad + "]";	}
+		return "Autor [name=" + nombre + ", edad=" + edad + "]";	}
 	
-	
+	public String toString() {
+		return "Libro [titulo=" + titulo + ", autor=" + autor.toString() + ", prestado="
+		+ prestado + "]";
+	}
+
 }
