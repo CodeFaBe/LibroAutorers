@@ -32,5 +32,9 @@ Libro  a = new Libro("hola", "mola");
 	public String toString() {
 		return "Autor [nombre=" + nombre + ", edad=" + edad + "]";	}
 	
-	
+	public String toString() {
+		return "Libro [titulo=" + titulo + ", autor=" + autor.toString() + ", prestado="
+		+ prestado + "]";
+	}
+
 }
